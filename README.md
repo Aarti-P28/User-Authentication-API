@@ -40,13 +40,14 @@ A simple Flask-based backend API for user registration and login with secure pas
 
     python app.py
     
-Server runs at: http://127.0.0.1:5000
+ Server runs at: http://127.0.0.1:5000
 
 ---
 
 ## 🧪 API Testing (Using Postman)
 
 🔐 Register a New User
+
 Endpoint: POST /register
 
 Body (JSON):
@@ -56,6 +57,7 @@ Body (JSON):
 }
 
 🔑 Login
+
 Endpoint: POST /login
 
 Body (JSON):
@@ -67,6 +69,7 @@ Body (JSON):
 Returns: JWT Token
 
 🔒 Protected Route Example (Requires Token)
+
 Endpoint: GET /protected
 
 Headers: 
