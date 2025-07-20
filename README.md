@@ -48,6 +48,7 @@ Server runs at: http://127.0.0.1:5000
 
 🔐 Register a New User
 Endpoint: POST /register
+
 Body (JSON):
 {
   "username": "admin",
@@ -56,15 +57,18 @@ Body (JSON):
 
 🔑 Login
 Endpoint: POST /login
+
 Body (JSON):
 {
   "username": "admin",
   "password": "admin123"
 }
+
 Returns: JWT Token
 
 🔒 Protected Route Example (Requires Token)
 Endpoint: GET /protected
+
 Headers: 
         Authorization: Bearer <your_token_here>
 
@@ -72,11 +76,11 @@ Headers:
 
 ## 🛡️ Security Notes
 
-Make sure to change SECRET_KEY in app.py before production.
+- Make sure to change SECRET_KEY in app.py before production.
 
-Do not upload users.db if using real user data.
+- Do not upload users.db if using real user data.
 
-Use HTTPS in real-world deployments.
+- Use HTTPS in real-world deployments.
 
 
 
@@ -84,15 +88,15 @@ Use HTTPS in real-world deployments.
 
 ## ✅ Requirements
 
-Python 3.8+
+- Python 3.8+
 
-Flask
+- Flask
 
-SQLAlchemy
+- SQLAlchemy
 
-PyJWT
+- PyJWT
 
-Werkzeug
+- Werkzeug
 
 Install all with: pip install -r requirements.txt
 
